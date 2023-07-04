@@ -14,43 +14,43 @@ const questions = [
   {
     type: 'input',
     name: 'description',
-    message: 'please describe the function and/or purpose of your project',
+    message: 'Describe Your Application',
   },
   {
     type: 'input',
     name: 'installation',
-    message: 'installation requirement (npm i)',
+    message: 'Installation Instructions',
   },
   {
     type: 'input',
     name: 'usage',
-    message: 'describe usage of application or provide screenshot',
+    message: 'Usage of Application',
   },
   {
     type: 'list',
     name: 'license',
-    message: 'please select an applicable license',
+    message: 'Select an Applicable License',
     choices: ['MIT', 'ISC', 'Mozilla', 'Apache', 'none'],
   },
   {
     type: 'input',
-    name: 'contributing',
-    message: 'list any contributors',
+    name: 'contributors',
+    message: 'List Any Contributors',
   },
   {
     title: 'input',
     name: 'test',
-    message: 'provide a test of the application',
+    message: 'Test of the Application',
   },
   {
     title: 'input',
     name: 'email',
-    message: 'provide your email',
+    message: 'Provide Your Email',
   },
   {
     title: 'input',
     name: 'creator',
-    message: 'provide your github user',
+    message: 'Your Github User Name',
   },
 ];
 

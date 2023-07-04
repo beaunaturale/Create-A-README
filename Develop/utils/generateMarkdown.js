@@ -13,8 +13,8 @@ function renderLicenseBadge(license) {
     return ''
 };
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// // TODO: Create a function that returns the license link
+// // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license === 'MIT') {
     return `(https://opensource.org/licenses/MIT)`;
@@ -26,7 +26,7 @@ function renderLicenseLink(license) {
     return `(https://opensource.org/licenses/Apache-2.0)`
   } else (license === 'none')
     return ''
-}
+};
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
@@ -36,19 +36,23 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   return `# ${data.title}
   ${renderLicenseBadge(data.license)}
+
+  ${renderLicenseLink(data.license)}
 ## Description
 ${data.description}
 ## Table of Contents
-* [Features](#features)
-* [Languages & Dependencies](#languagesanddependencies)
-* [How to Use This Application](#HowtoUseThisApplication)
+* [Description](#description)
+* [Installation Instructions](#installationInstructions)
+* [Usage of this Application](#usageOfThisApplication)
 * [Contributors](#contributors)
 * [Testing](#testing)
 * [Questions](#questions)
-## How to Use This Application:
+## Installation Instructions
+${data.installation}
+## Usage of this Application
 ${data.usage}
 ## Contributors
-${data.contributing}
+${data.contributors}
 ## Testing
 ${data.test}
 ## Questions
